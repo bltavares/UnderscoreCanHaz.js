@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Demo faTabs</title>	
+	<script src="lib/jquery-1.6.2.min.js" type="text/javascript"></script>
+	<script src="lib/underscore-min.js" type="text/javascript"></script>
+	<script src="lib/underscore-canhaz.js" type="text/javascript"></script>
+	<script>
+		$(function(){			
+			var person = {"name": "Bruno","friends": [{"name": "Carol"}, {"name": "Joca"}]};		
+			var html = _chz.person(person);
+			html.appendTo("body");
+		});
+	</script>
+</head>
+<body>
+
+<script id="person" type="text/html">
+	<h1>Name: <%=name%></h1>
+	<h2>Friends</h2>
+	<ul>	
+	<% _.each(friends, function(friend) {%> 
+		<li><%= friend.name %></li>
+	<% }); %> 
+	</ul>
+</script>
+</body>
+
+</html>
