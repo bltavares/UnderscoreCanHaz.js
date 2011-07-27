@@ -10,6 +10,10 @@
 		$(function(){			
 			var person = {"name": "Bruno","friends": [{"name": "Carol"}, {"name": "Joca"}]};		
 			var html = _chz.person(person);
+
+      //Checking for the cached
+      //var cached_html = _chz.person(person);
+      //html.html() == cached_html.html();
 			html.appendTo("body");
 		});
 	</script>
