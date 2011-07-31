@@ -16,10 +16,12 @@ You can call the template like:
 
 
 The default options are:
+
     {
       raw: false, #return the html as an Jquery obj
       cache: true #cache the template based on the obj passed to it
      }
+
 
 _Probably you are using Jquery and Underscore already, right?_
 
