@@ -1,0 +1,9 @@
+<script id="person" type="text/html">
+	<h1>Name: <%=name%></h1>
+	<h2>Friends</h2>
+	<ul>	
+	<% _.each(friends, function(friend) {%> 
+		<li><%= friend.name %></li>
+	<% }); %> 
+	</ul>
+</script>

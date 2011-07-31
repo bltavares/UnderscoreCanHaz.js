@@ -11,8 +11,8 @@ It looks similar to andyet's [ICanHaz.js](http://icanhazjs.com/) (It's inspired 
 
 You can call the template like:
 
-     _chz.template_name(obj, options) #or
-     _chz["template_name"](obj, options)
+     _chz.template_name(obj [,options]) #or
+     _chz["template_name"](obj [,options] )
 
 
 The default options are:
@@ -21,6 +21,11 @@ The default options are:
       raw: false, #return the html as an Jquery obj
       cache: true #cache the template based on the obj passed to it
      }
+
+
+You can override the default by setting 
+
+    _chz.defaults = { raw: true, cache: false }
 
 
 _Probably you are using Jquery and Underscore already, right?_
